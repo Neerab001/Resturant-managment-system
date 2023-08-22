@@ -23,10 +23,7 @@ public class Customer {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="order_Id",referencedColumnName = "orderId")
     private Orders orders;
-/*
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name="order_Id",referencedColumnName = "orderId")
-    private List<Orders> orders;*/
+
 
 
 }

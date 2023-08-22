@@ -41,7 +41,7 @@ public class BillService {
                 existingBillData.setBillStatus(bill.getBillStatus());
             }
             billRepository.save(existingBillData);
-            return "Bill data patched!";
+            return "Bill data has been patched!";
         }
         else{
             return "The bill you are trying to update does not exist in our record!";
