@@ -37,7 +37,7 @@ public class BillController {
     }
     @DeleteMapping("/{billId}")
     public ResponseEntity<String> deleteBillById(@PathVariable("billId") Long billId){
-        System.out.println("deleted by Rajee");
+        System.out.println("deleted by Rajee on the code");
         return ResponseEntity.ok(billService.deleteBillById(billId));
     }
     @GetMapping("/{billId}")
